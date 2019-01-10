@@ -61,6 +61,10 @@ hr{
     margin-right: 33%;
     clear: both;
 }
+img{
+
+  border-radius:150px;
+}
 .max {width: 65%; margin-left: 17.5%; margin-right: 17.5%;}
 .img{width: 450px; height: 253px;margin: auto;margin-top: 50px;margin-bottom: 25px;}
 .par1,.par2,.par3{
@@ -76,4 +80,24 @@ hr{
 }
 .par3{
     font-size: 25px;
+}
+.who{
+
+display: inline-block;
+margin: 25px 30px 50px 30px;
+}
+.texto{
+display: inline-block;
+text-align: left;
+height: 130px;
+width: 550px;
+
+
+}
+
+
+footer{
+  height: 120px;
+  width: 100%;
+  background-color: white;
 }
