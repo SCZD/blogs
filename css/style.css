@@ -98,7 +98,10 @@ width: 550px;
 
 }
 
+.linux{
+  margin-top: 100px;
 
+}
 .books{
   margin: 50px 22px;
 
@@ -112,4 +115,44 @@ footer{
   height: 120px;
   width: 100%;
   background-color: white;
+}
+.asterisco{
+
+  color:red ;
+}
+.imagesoftware{
+border:solid black 4px;
+
+display: inline-block;
+margin-bottom: 50px;
+
+}
+.textosoftware{
+display: inline-block;
+ vertical-align: top;
+height: 130px;
+width: 740px;
+
+margin: 15px 15px 150px 8px;
+
+}
+.btn {
+  background-color:#1e90ff;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 20px;
+  margin: 5px 5px;
+  margin-left: 2%;
+  margin-top: 50px;
+ 
+
+  width: 700px;
+
+
+}
+.btn:hover{
+  background-color: #4169e1;
 }
