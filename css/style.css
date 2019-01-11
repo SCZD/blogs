@@ -20,6 +20,7 @@ nav ul li ul li a {
 
 width: 95px;
 height: 20px;
+text-align: left;
 
 }
 nav ul li {
@@ -47,7 +48,6 @@ nav ul li {
   
 }
 
-
 p{
     margin-top: .50em;
     text-align: justify;
@@ -61,9 +61,12 @@ hr{
     margin-right: 33%;
     clear: both;
 }
-img{
+.person{
 
   border-radius:150px;
+}
+nav ul {
+  text-align: right;
 }
 .max {width: 65%; margin-left: 17.5%; margin-right: 17.5%;}
 .img{width: 450px; height: 253px;margin: auto;margin-top: 50px;margin-bottom: 25px;}
@@ -96,6 +99,15 @@ width: 550px;
 }
 
 
+.books{
+  margin: 50px 22px;
+
+  /*border: solid red 2px;*/
+  display: inline-block;
+}
+.center {
+  text-align: center;
+}
 footer{
   height: 120px;
   width: 100%;
