@@ -89,15 +89,38 @@ nav ul {
 display: inline-block;
 margin: 25px 30px 50px 30px;
 }
-.texto{
-display: inline-block;
+textoa{
+display: none;
 vertical-align:top;
-margin-top:50px;
 height: 130px;
 width: 250px;
+margin-top: 36px;
+margin-right: 35px;
 
 
 }
+.textob{
+display: none;
+vertical-align:top;
+
+
+margin-top: 42px;
+height: 130px;
+width: 300px;
+margin-right: 35px;
+
+
+
+}
+
+@media only screen and (min-width: 1250px){
+
+.textoa, .textob{
+
+	display: inline-block;
+}
+
+
 
 .linux{
   margin-top: 100px;
