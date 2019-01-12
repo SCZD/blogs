@@ -1,53 +1,48 @@
 body {
-    margin-left: 10%;
-    margin-right: 10%;
+   margin-left: 10%;
+   margin-right: 10%;
 }
+/*MENU*/
 nav {
   width: 100%;
   background-color:rebeccapurple;
 }
 nav a {
-  color:#FFFFFF;
-  display:block;
-  text-decoration: none;
-  padding:20px 30px;
+	color:#FFFFFF;
+	display:block;
+	text-decoration: none;
+	padding:20px 30px;
  }
- nav a:hover {
-  background:#E0BBE4;
- 
+nav a:hover {
+	background:#E0BBE4;
 }
 nav ul li ul li a {
-
-width: 150px;
-height: 20px;
-text-align: left;
-
+	width: 150px;
+	height: 20px;
+	text-align: left;
 }
 nav ul li {
-  display:inline-block;  
+	display:inline-block;  
+}
+nav ul {
+  text-align: right;
 }
 .sub-menu {
-  position: absolute;
-  display: none;
-  margin-left: -40px;
-
-  
+	position: absolute;
+  	display: none;
+  	margin-left: -40px;
 }
-.essencial:hover .sub-menu {   
-  display: block;
+.menu-item:hover .sub-menu {   
+  	display: block;
 }
 .sub-menu-item {
-  background: #957DAD;
-
-  display: block;
-  
-  
+  	background: #957DAD;
+  	display: block;
 }
 .sub-menu-item:hover {
-  background:#E0BBE4;
-  
+  	background:#E0BBE4;
 }
-
+/* INDEX */
 p{
     margin-top: .50em;
     text-align: justify;
@@ -61,21 +56,8 @@ hr{
     margin-right: 33%;
     clear: both;
 }
-.person{
-
-  border-radius:150px;
-}
-.person:hover{
-	border:solid 6px black;
-	width: 117px;
-	height: 117px
-
-}
-nav ul {
-  text-align: right;
-}
-.max {width: 65%; margin-left: 17.5%; margin-right: 17.5%;}
-.img{width: 450px; height: 253px;margin: auto;margin-top: 50px;margin-bottom: 25px;}
+.max{width: 65%; margin-left: 17.5%; margin-right: 17.5%;}
+.banner{width: 450px; height: 253px;margin: auto;margin-top: 50px;margin-bottom: 25px;}
 .par1,.par2,.par3{
     font-weight:bold;
     text-align: center;
@@ -90,99 +72,90 @@ nav ul {
 .par3{
     font-size: 25px;
 }
+.asterisco{
+  	color:red ;
+}
+.separadortop{
+	margin-top: 75px;
+}
+
+/* EBOOKS */
 .who{
-
-display: inline-block;
-margin: 25px 30px 50px 30px;
-}
-.textoa{
-display: none;
-vertical-align:top;
-height: 130px;
-width: 250px;
-margin-top: 36px;
-margin-right: 35px;
-
-
-}
-.textob{
-display: none;
-vertical-align:top;
-
-
-margin-top: 42px;
-height: 130px;
-width: 300px;
-margin-right: 35px;
-
-
-
-}
-
-@media only screen and (min-width: 1250px){
-
-.textoa, .textob{
-
 	display: inline-block;
+	margin: 25px 30px 50px 30px;
 }
-
+.whotextoa{
+	display: none;
+	vertical-align:top;
+	height: 130px;
+	width: 250px;
+	margin-top: 36px;
+	margin-right: 35px;
 }
-
-.linux{
-  margin-top: 100px;
-
+.whotextob{
+	display: none;
+	vertical-align:top;
+	margin-top: 42px;
+	height: 130px;
+	width: 300px;
+	margin-right: 35px;
+}
+.whocircle{
+  border-radius:150px;
+}
+.whocircle:hover{
+	border:solid 6px black;
+	width: 117px;
+	height: 117px
 }
 .books{
-  margin: 50px 22px;
+  	margin: 50px 22px;
+  	display: inline-block;
+}
+.booksnamecenter{
+  	text-align: center;
+}
 
-  /*border: solid red 2px;*/
-  display: inline-block;
-}
-.center {
-  text-align: center;
-}
-footer{
-  height: 120px;
-  width: 100%;
-  background-color: white;
-}
-.asterisco{
+/* SOFTWARE */
 
-  color:red ;
-}
 .imagesoftware{
-border:solid black 4px;
-
-display: inline-block;
-margin-bottom: 50px;
-
+	border:solid black 4px;
+	display: inline-block;
+	margin-bottom: 50px;
 }
 .textosoftware{
-display: inline-block;
- vertical-align: top;
-height: 130px;
-width: 740px;
-
-margin: 15px 15px 150px 8px;
-
+	display: inline-block;
+	vertical-align: top;
+	height: 130px;
+	width: 740px;
+	margin: 15px 15px 150px 8px;
 }
-.btn {
-  background-color:#1e90ff;
-  border: none;
-  color: white;
-  padding: 12px 30px;
-  cursor: pointer;
-  text-align: center;
-  font-size: 20px;
-  margin: 5px 5px;
-  margin-left: 2%;
-  margin-top: 50px;
- 
-
-  width: 700px;
-
-
+.btnsoftwaredownload{
+	background-color:#1e90ff;
+	border: none;
+	color: white;
+	padding: 12px 30px;
+	cursor: pointer;
+	text-align: center;
+	font-size: 20px;
+	margin: 5px 5px;
+	margin-left: 2%;
+	margin-top: 50px;
+	width: 700px;
 }
-.btn:hover{
-  background-color: #4169e1;
+.btnsoftwaredownload:hover{
+  	background-color: #4169e1;
+}
+
+/* @MEDIA */
+@media only screen and (min-width: 1250px){
+.whotextoa, .whotextob{
+	display: inline-block;
+}
+}
+/* FOOTER */
+footer{
+	height: 120px;
+	width: 100%;
+	background-color: white;
 }
