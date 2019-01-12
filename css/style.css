@@ -65,6 +65,12 @@ hr{
 
   border-radius:150px;
 }
+.person:hover{
+	border:solid 6px black;
+	width: 117px;
+	height: 117px
+
+}
 nav ul {
   text-align: right;
 }
