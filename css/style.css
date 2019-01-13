@@ -20,13 +20,13 @@ nav {
   width: 100%;
   background-color:rebeccapurple;
 }
-nav a {
+.link{
 	color:#FFFFFF;
 	display:block;
 	text-decoration: none;
 	padding:20px 30px;
  }
-nav a:hover {
+.link:hover {
 	background:#E0BBE4;
 }
 nav ul li ul li a {
@@ -187,3 +187,25 @@ footer{
 	height: 404px;
 	background-color: #202637;
 }
+.fysync{
+	float: left;
+	color:#FFFFFF;
+	display:block;
+	text-decoration: none;
+	padding:20px 30px;
+	font-weight: bold;
+	font-family: lato;
+	margin-top: -8px;
+
+}
+.ex{
+	float: left;
+	color:#FFFFFF;
+	display:block;
+	text-decoration: none;
+	padding:20px 0px;
+	font-weight: bold;
+	font-family: lato;
+	margin-left: -25px;
+}
+
