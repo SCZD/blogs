@@ -7,6 +7,15 @@ hide:none;
 
 }
 /*MENU*/
+.fysync{
+	float: left;
+	color:#FFFFFF;
+	display:block;
+	text-decoration: none;
+	padding:20px 30px;
+	font-weight: bold;
+	font-family: lato;
+}
 nav {
   width: 100%;
   background-color:rebeccapurple;
@@ -51,6 +60,7 @@ p{
     margin-top: .50em;
     text-align: justify;
     margin-bottom: .50em;
+    font-family:lato;
 }
 hr{
     width: 33%;
