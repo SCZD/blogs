@@ -2,6 +2,10 @@ body {
    margin-left: 10%;
    margin-right: 10%;
 }
+:root{
+hide:none;
+
+}
 /*MENU*/
 nav {
   width: 100%;
@@ -57,7 +61,7 @@ hr{
     clear: both;
 }
 .max{width: 65%; margin-left: 17.5%; margin-right: 17.5%;}
-.banner{width: 450px; height: 253px;margin: auto;margin-top: 50px;margin-bottom: 25px;}
+.banner{width: 100%; height: 312px;margin: auto;margin-top:50px;margin-bottom: 25px;}
 .par1,.par2,.par3{
     font-weight:bold;
     text-align: center;
@@ -78,23 +82,24 @@ hr{
 .separadortop{
 	margin-top: 75px;
 }
-
 /* ABOUT */
 .who{
 	display: inline-block;
-	margin: 25px 30px 50px 30px;
+	margin: 25px 15px 50px 30px;
 }
 .whotextoa{
 	display: none;
 	vertical-align:top;
 	height: 130px;
 	width: 250px;
+	color:white;
 	margin-top: 36px;
 	margin-right: 35px;
 }
 .whotextob{
 	display: none;
 	vertical-align:top;
+	color: white;
 	margin-top: 42px;
 	height: 130px;
 	width: 300px;
@@ -104,13 +109,21 @@ hr{
   border-radius:150px;
 }
 .whocircle:hover{
-	border:solid 6px black;
+	border:solid 6px white;
 	width: 117px;
-	height: 117px
+	height: 117px;
+}
+.about{
+	margin:0px 30px;
+	color:white;
+	text-align: center;
+}
+.textoabout{
+	text-align: center;
 }
 /* EBOOKS */
 .books{
-  	margin: 20px 10px;
+  	margin: 20px 12px;
   	display: inline-block;
 }
 .booksnamecenter{
@@ -155,8 +168,12 @@ hr{
 }
 }
 /* FOOTER */
+.bold{
+	font-weight:bold;
+	font-size: 18px;
+}
 footer{
-	height: 120px;
 	width: 100%;
-	background-color: white;
+	height: 404px;
+	background-color: #202637;
 }
