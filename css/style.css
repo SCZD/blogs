@@ -1,24 +1,39 @@
-body {
-   margin-left: 10%;
-   margin-right: 10%;
-}
 :root{
 hide:none;
-
 }
 /*MENU*/
+.kw{
+	background:url("file:///home/mitsworth_sczd/Desktop/3840x2160-px-black-background-minimalism-simple-simple-background-space-1328341-wallhere.com.jpg")no-repeat center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background:;
+	height:981px;
+    width:100%;
+    background-size: cover; 
+    margin-top:-16px; 
+}
+.kw2{
+    width:100%;
+    display: none;
+}
 .fysync{
 	float: left;
-	color:#FFFFFF;
 	display:block;
-	text-decoration: none;
 	padding:20px 30px;
-	font-weight: bold;
-	font-family: lato;
+	margin-top: -7px;
 }
-nav {
-  width: 100%;
-  background-color:rebeccapurple;
+.margin{
+	margin:0px 10%;
+}
+.wasd{
+	background: black;
+	width: 100%;
+}
+nav {	
+  width: 76%;
+  background-color:black;
+  margin: auto;
 }
 .link{
 	color:#FFFFFF;
@@ -27,7 +42,9 @@ nav {
 	padding:20px 30px;
  }
 .link:hover {
-	background:#E0BBE4;
+	background:white;
+	color:black
+
 }
 nav ul li ul li a {
 	width: 150px;
@@ -49,11 +66,11 @@ nav ul {
   	display: block;
 }
 .sub-menu-item {
-  	background: #957DAD;
+  	background: black;
   	display: block;
 }
 .sub-menu-item:hover {
-  	background:#E0BBE4;
+  	background:black;
 }
 /* INDEX */
 p{
@@ -133,7 +150,7 @@ hr{
 }
 /* EBOOKS */
 .books{
-  	margin: 20px 12px 0px 0px;
+  	margin: 25px 10px; 
   	display: inline-block;
 }
 .booksnamecenter{
@@ -170,13 +187,6 @@ hr{
 .btnsoftwaredownload:hover{
   	background-color: #4169e1;
 }
-
-/* @MEDIA */
-@media only screen and (min-width: 1250px){
-.whotextoa, .whotextob{
-	display: inline-block;
-}
-}
 /* FOOTER */
 .bold{
 	font-weight:bold;
@@ -187,25 +197,72 @@ footer{
 	height: 404px;
 	background-color: #202637;
 }
-.fysync{
-	float: left;
-	color:#FFFFFF;
-	display:block;
-	text-decoration: none;
-	padding:20px 30px;
-	font-weight: bold;
-	font-family: lato;
-	margin-top: -8px;
-
-}
 .ex{
 	float: left;
 	color:#FFFFFF;
 	display:block;
 	text-decoration: none;
-	padding:20px 0px;
-	font-weight: bold;
-	font-family: lato;
-	margin-left: -25px;
+	padding:20px 30px;
+	margin-left: -20px;
+	border: 0px transparent solid;
+	margin-top: 0px;
+
+}.ex:hover{
+	
+	color:black;
+	background: white;
+	
 }
+.titulobanner{
+	margin-top: 180px;
+	color:white;
+}
+/* @MEDIA */
+@media only screen and (min-width: 1250px){
+.whotextoa, .whotextob{
+	display: inline-block;
+}
+}
+@media only screen and (max-width: 996px){
+.kw{
+	display: none;
+}
+}
+@media only screen and (max-width: 996px){
+.kw2{
+	display: inline-block;
+	width: 0px;
+}
+nav{
+	height: 60px;
+	width: 100%;
+	bottom:0px;
+	position: fixed;
+
+}
+.menu2{
+  width: 76%;
+  background-color:black;
+  margin: auto;
+
+
+}
+.link2{
+	color:#FFFFFF;
+	display:block;
+	text-decoration: none;
+	padding:20px 15px;
+	margin: 0px 4px;
+ }
+.link2:hover {
+	background:white;
+	color:black;
+
+}
+nav ul {
+  text-align: center;
+}
+
+}
+
 
