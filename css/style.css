@@ -234,7 +234,7 @@ footer{
 	width: 0px;
 }
 nav{
-	height: 60px;
+	height: 150px;
 	width: 100%;
 	bottom:0px;
 	position: fixed;
@@ -253,6 +253,8 @@ nav{
 	text-decoration: none;
 	padding:20px 15px;
 	margin: 0px 0px;
+	font-size:24px;
+	margin-top:20%;
  }
 .link2:hover {
 	background:white;
