@@ -231,6 +231,10 @@ footer{
 	margin-top: 180px;
 	color:white;
 }
+.footer2{
+	width: 100%;
+	height: 100px;
+}
 /* @MEDIA */
 @media only screen and (min-width: 1250px){
 .whotextoa, .whotextob{
