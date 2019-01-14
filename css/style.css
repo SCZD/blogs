@@ -234,14 +234,14 @@ footer{
 	width: 0px;
 }
 nav{
-	height: 150px;
-	width: 110%;
+	height: 300px;
+	width: 100%;
 	bottom:0px;
 	position: fixed;
 
 }
 .menu2{
-  width: 76%;
+  width: 100%;
   background-color:black;
   margin: auto;
 
