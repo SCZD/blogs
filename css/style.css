@@ -234,11 +234,12 @@ footer{
 	width: 0px;
 }
 nav{
-	height: 600px;
+	height: 300px;
 	width: 100%;
 	bottom:0px;
 	position: fixed;
-	maring-left:-4px;
+	margin-left: 0px;
+
 
 }
 .menu2{
@@ -254,8 +255,8 @@ nav{
 	text-decoration: none;
 	padding:20px 15px;
 	margin: 0px 0px;
-	font-size:24px;
-	margin-top:20%;
+	font-size: 24px;
+	margin-top: 60%;
  }
 .link2:hover {
 	background:white;
