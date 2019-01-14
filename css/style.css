@@ -234,10 +234,11 @@ footer{
 	width: 0px;
 }
 nav{
-	height: 300px;
+	height: 600px;
 	width: 100%;
 	bottom:0px;
 	position: fixed;
+	maring-left:-4px;
 
 }
 .menu2{
