@@ -13,6 +13,18 @@ hide:none;
     background-size: cover; 
     margin-top:-16px; 
 }
+.error {
+	background:url("404.png")no-repeat center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-color:black;
+	height:9999px;
+    border: 15px red white;
+    background-size: cover; 
+    margin-top:0px; 
+
+}
 .fysync{
 	float: left;
 	display:block;
