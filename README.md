@@ -1,4 +1,4 @@
 # Portafolio
 
 Fysync
-![](image/new.jpg)
+![](img/new.jpg)
