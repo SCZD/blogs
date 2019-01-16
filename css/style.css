@@ -1,6 +1,11 @@
 :root{
 hide:none;
+
 }
+*{
+font-family: 'Roboto', sans-serif;
+}
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 /*MENU*/
 .kw{
 	background:url("bannner.jpg")no-repeat center fixed;
@@ -8,11 +13,12 @@ hide:none;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background:;
-	height:981px;
+	height:1000px;
     width:100%;
     background-size: cover; 
     margin-top:-16px; 
 }
+
 .error {
 	background:url("error.png")no-repeat center fixed;
 	-webkit-background-size: cover;
@@ -34,15 +40,21 @@ width:100%;
 .marginhome{
 	text-align: center;
 	margin: 0 10%;
+	color: white;
 }
+.blackhome{
+	background: black;
+	margin-top: -32px;
+	/*margin-bottom: -32px;*/
 
+}
 
 .wasd{
 	background: black;
 	width: 100%;
 }
 nav {	
-  width: 76%;
+  width: 79%;
   background-color:black;
   margin: auto;
   margin-top: -16px;
@@ -56,11 +68,11 @@ nav {
  }
 .link:hover {
 	background:white;
-	color:black
+	color:black;
 
 }
 nav ul li ul li a {
-	width: 150px;
+	width: 130px;
 	height: 20px;
 	text-align: left;
 }
@@ -79,11 +91,14 @@ nav ul {
   	display: block;
 }
 .sub-menu-item {
-  	background: black;
+  	background: transparent;
   	display: block;
 }
 .sub-menu-item:hover {
   	background:black;
+}
+.transmenu{
+	background: transparent;
 }
 /* INDEX */
 p{
@@ -101,6 +116,7 @@ hr{
     clear: both;
 }
 .max{width: 65%; margin-left: 17.5%; margin-right: 17.5%;}
+
 .banner{width: 100%; height: 312px;margin: auto;margin-top:50px;margin-bottom: 25px;}
 .par1,.par2,.par3{
     font-weight:bold;
@@ -152,11 +168,13 @@ hr{
 }
 .whocircle{
   border-radius:150px;
+  border: solid transparent 6px;
 }
 .whocircle:hover{
 	border:solid 6px white;
-	width: 117px;
-	height: 117px;
+	-webkit-transition: .3s;
+
+	
 }
 .about{
 	margin:0px 30px;
