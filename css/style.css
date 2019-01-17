@@ -373,6 +373,16 @@ label::before {
 
 
 }
+.colorfooter{
+	background: black;
+}
+.registrate{
+	color:#fab53f;
+}
+.faq{
+	margin:100px 0px;
+}
+
 
 
 
