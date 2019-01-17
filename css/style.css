@@ -254,7 +254,7 @@ footer{
 	width: 100%;
 	height: 404px;
 	background-color: #202637;
-	background: url("file:///home/mitsworth_sczd/Desktop/bannnerfooter.png") no-repeat center fixed;
+	background: url("bannnerfooter.png") no-repeat center fixed;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	
@@ -383,7 +383,7 @@ label::before {
 
 }
 .colorfooter{
-	background: url("file:///home/mitsworth_sczd/Desktop/bannnerfooter.png") no-repeat center fixed;
+	background: url("bannnerfooter.png") no-repeat center fixed;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	
