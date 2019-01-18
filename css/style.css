@@ -320,6 +320,9 @@ background-color: transparent;
 font-size: 12px; 
 margin: 0px 7px;
 }
+..link2:hover{
+text-decoration: underline;
+}
 .link3{
 /*color:#fe3b3e*/
 color:#fab53f ;
