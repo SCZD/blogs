@@ -2,10 +2,7 @@
 hide:none;
 
 }
-*{
-font-family: 'Roboto', sans-serif;
-}
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 /*MENU*/
 .kw{
 	background:url("bannner.jpg")no-repeat center fixed;
