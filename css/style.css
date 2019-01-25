@@ -1,80 +1,111 @@
 :root{
 hide:none;
-
 }
-
-/*MENU*/
-.kw{
-	background:url("bannner.jpg")no-repeat center fixed;
+/* index/kw */
+.bodyc{
+	background:white no-repeat center fixed;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+    background-size: cover;   
+}
+.kw{ 
+	background:url("bannera.jpg")no-repeat center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
-	background:;
+	
 	height:1000px;
     width:100%;
-    background-size: cover; 
-    margin-top:-16px; 
+    background-size: cover;
 }
-
-.error {
-	background:url("error.png")no-repeat center fixed;
+.kwr{  /* idk later :) */
+	background: white no-repeat center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
-	background-color:black;
-	height:9999px;
-    border: 15px red white;
-    background-size: cover; 
-    margin-top:0px; 
-width:100%;
+	
+	height:95px;
+    width:100%;
+    background-size: cover;
 }
-.fysync{
-	float: left;
+.fondo{
+	width: 100%;
+	background: black;
+}
+.nav{
+	background:black;
+	width: 79%;
+  	background-color:black;
+  	margin: auto;
+  	margin-top: -16px;
+}
+.logo{
+	float:left;
 	display:block;
 	padding:20px 30px;
-	margin-top: -7px;
 }
-.lainfy{
-	float: left;
-	display:block;
-	padding:20px 30px;
+.favitop{	
+	margin-top:-8px;
+}
+.nametop{	
 	margin-top: -5px;
 	margin-left: -45px;
 }
-
 .click:hover{
-	 -webkit-filter: invert(100%);
+	-webkit-filter: invert(100%);
     filter: invert(100%);
-    border-radius: 8px; 
-	
+    border-radius: 8px;
 }
-.marginhome{
+.divkw{
 	text-align: center;
 	margin: 0 10%;
 	color: white;
 }
-.marginhome1{
-	text-align: center;
-	margin: 0 10%;
-	color: black;
+.par1,.par2,.par3{
+    font-weight:bold;
+    text-align:center;
+    text-indent:0em;
 }
-.blackhome{
-	background: black;
-	margin-top: -32px;
-	/*margin-bottom: -32px;*/
-
+.par1{
+    font-size: 35px;
 }
-
-.wasd{
-	background: black;
-	width: 100%;
+.par2{
+    font-size: 17px;
 }
-nav {	
-  width: 79%;
-  background-color:black;
-  margin: auto;
-  margin-top: -16px;
-
+.par3{
+    font-size: 25px;
+}
+.faq{
+	margin-top: 75px;
+}
+ div div p:last-child{
+	margin-bottom: 75px;
+}
+nav div ul li ul li a{
+	width:130px;
+	height:20px;
+	text-align:left;
+}
+nav div ul li{
+	display:inline-block;  
+}
+nav ul {
+  	text-align: right;  /* cualquiera no hace falta copncretar ya que lo queremos para todos*/
+}
+.sub-menu{
+	position: absolute;
+  	display: none;
+  	margin-left: -40px;
+}
+.menu-item:hover .sub-menu{   
+  	display: block;
+}
+.sub-menu-item{
+  	background: black;
+  	display: block;
+}
+.sub-menu-item:hover{
+  	background:black;
 }
 .link{
 	color:#FFFFFF;
@@ -85,38 +116,36 @@ nav {
 .link:hover {
 	background:white;
 	color:black;
-
 }
-nav ul li ul li a {
-	width: 130px;
-	height: 20px;
-	text-align: left;
+.max{width: 65%; margin-left: 17.5%; margin-right: 17.5%;}
+/*.marginhome1{
+	text-align: center;
+	margin: 0 10%;
+	color: black;
+}*/
+.titulobanner{
+	color:white;
+	text-align: center;
 }
-nav ul li {
-	display:inline-block;  
+.blackhome{
+	background: black;
+	margin: -2em 0px;
 }
-nav ul {
-  text-align: right;
+.registrate{
+	color:#fab53f;
 }
-.sub-menu {
-	position: absolute;
-  	display: none;
-  	margin-left: -40px;
+.error{
+	background:url("error.png")no-repeat center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-color:black;
+	height:9999px;
+    border: 15px red white;
+    background-size: cover; 
+    margin-top:0px; 
+	width:100%;
 }
-.menu-item:hover .sub-menu {   
-  	display: block;
-}
-.sub-menu-item {
-  	background: transparent;
-  	display: block;
-}
-.sub-menu-item:hover {
-  	background:black;
-}
-.transmenu{
-	background: transparent;
-}
-/* INDEX */
 p{
     margin-top: .50em;
     text-align: justify;
@@ -131,76 +160,78 @@ hr{
     margin-right: 33%;
     clear: both;
 }
-.max{width: 65%; margin-left: 17.5%; margin-right: 17.5%;}
-
-.banner{width: 100%; height: 312px;margin: auto;margin-top:50px;margin-bottom: 25px;}
-.par1,.par2,.par3{
-    font-weight:bold;
-    text-align: center;
-    text-indent: 0em;
-}
-.par1{
-    font-size: 35px;
-}
-.par2{
-    font-size: 17px;
-}
-.par3{
-    font-size: 25px;
-}
 .asterisco{
   	color:red ;
   	margin-left: 10%;
 }
 .asteriscoonlyred{
   	color:red ;
-  	
 }
-.separadortop{
-	margin-top: 25px;
-}
-/* ABOUT */
-.who{
-	display: inline-block;
-	margin: 25px 15px 50px 30px;
-}
-.whotextoa{
-	display: none;
-	vertical-align:top;
-	height: 130px;
-	width: 250px;
-	color:white;
-	margin-top: 36px;
-	margin-right: 35px;
-}
-.whotextob{
-	display: none;
-	vertical-align:top;
-	color: white;
-	margin-top: 42px;
-	height: 130px;
-	width: 300px;
-	margin-right: 35px;
-}
-.whocircle{
-  border-radius:150px;
-  border: solid transparent 6px;
-}
-.whocircle:hover{
-	border:solid 6px white;
-	-webkit-transition: .3s;
+/* ebooks*/
+.maths, .chemistry, .physics{
 
-	
+ display: inline; /*quitar efecto de piramide*/
 }
-.about{
-	margin:0px 30px;
-	color:white;
-	text-align: center;
+#maths:checked ~ #market .physics, #maths:checked ~ #market .chemistry {
+	display: none;
 }
-.textoabout{
-	text-align: center;
+#physics:checked ~ #market .maths, #physics:checked ~ #market .chemistry {
+	display: none;
 }
-/* EBOOKS */
+#chemistry:checked ~ #market .physics, #chemistry:checked ~ #market .maths {
+	display: none;
+}
+input[type="radio"] {
+  position: absolute;
+  opacity: 0;  
+}
+label {
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  margin-left: 0%;
+  padding-left: 30px;
+  padding-right: 10px;
+  line-height: 36px;
+  cursor: pointer;
+}
+label::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: -2px;
+  display: block;
+  width: 24px;
+  height: 24px;
+  border: 2px solid black;
+  z-index: -1;
+}
+input[type="radio"] + label::before {
+  background: white;
+}
+input[type="radio"]:checked + label {
+  padding-left: 15px;
+  color: white;
+}
+input[type="radio"]:checked + label::before {
+  top: -3;
+  width: 100%;
+  height: 100%;
+  background: black;
+}
+label,label:before {
+  -webkit-transition: .20s all ;
+  -o-transition: .20s all ;
+  transition: .20s all ;
+}
+.margin{
+	margin-left: 10%
+}
+.margin2{
+	margin-left: 5%;
+}
 #market{
 	text-align: center;
 	margin-top: 45px;
@@ -212,19 +243,22 @@ hr{
   	display: inline-block;
 	width:225px;
   	height:400px;
-	vertical-align: top; /* xDDDDDDDDDDDDDDDDDDDDDDDDDDDDD*/
-
+	vertical-align: top; /* igual de margen tanto arriba y abjo aunque tengan mas texto (pues que el nombre del libro ocupe 2 o mas lineas)*/
 }
 .booksnamecenter{
   	text-align: center;
 }
-.ene{
+.searchebooks{
  	margin: 3% 10%; 
  	font-size: 20px;
  	font-weight: bolder;
-
  }
-/* SOFTWARE */
+ /* infolinux*/ 
+ .margininfolinux{
+ 	text-align: center;
+ 	margin:0px 10%;
+ }
+/* sofware */
 .program{
 	text-align: left;
 	margin-left: 10%;
@@ -232,7 +266,6 @@ hr{
 .centersoftware{
 	text-align: center;
 }
-
 .imagesoftware{
 	border:solid black 4px;
 	display: inline-block;
@@ -268,87 +301,107 @@ hr{
 }
 footer{
 	width: 100%;
-	height: 404px;
-	background-color: #202637;
-	background: url("bannnerfooter.png") no-repeat center fixed;
+	background: white;
+}
+.footera{
+	background:url("bannerb.png") no-repeat center fixed;
+	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
-	
-	
-    
-    background-size: cover; 
 	text-align: center;
-	margin-top: 100px;
-	
+	height: 350px;
 }
-.ex{
-	float: left;
-	color:#FFFFFF;
-	display:block;
-	text-decoration: none;
-	padding:20px 30px;
-	margin-left: -20px;
-	border: 0px transparent solid;
-	margin-top: 0px;
-
-}
-.ex:hover{
-	
-	color:black;
+.footerb{
 	background: white;
-	
+	text-align: center;
+	height: 30px;
 }
-.titulobanner{
-	margin-top: 180px;
+.footerc{
+	text-align: center;
+	height: 30px;
+}
+.index{
+	background:url("bannerb.png") no-repeat center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+/* ABOUT */
+.who{
+	display: inline-block;
+	margin: 70px 15px 50px 30px;
+}
+.whotextoa{
+	display: none;
+	margin-top: 85px;
+	vertical-align:top;
+	height: 130px;
+	width: 250px;
 	color:white;
 }
-
-.footer2{
- width: 100%;
- height: 100px;
- text-align: center;
+.whotextob{
+	display: none;
+	vertical-align:top;
+	color: white;
+	margin-top: 90px;
+	height: 130px;
+	width: 300px;
+	margin-right: 35px;
+}
+.whocircle{
+  border-radius:150px;
+  border: solid transparent 6px;
+}
+.whocircle:hover{
+	border:solid 6px white;
+	-webkit-transition: .3s;
+}
+.about{
+	margin:-45px 30px;
+	color:white;
+	text-align: center;
+}
+.textoabout{
+	text-align: center;
+	margin-bottom:0px;/*IMPORTANTE EN LAST CHILD SE LE DIO 75 PX DE MARGEN DE BOTTOM, y por defento tiene 8 pixeles pero se puede quitar np*/
 }
 .izquierda{
- 
- display: inline-block;
- float: left;
-}
-.derecha{
- display: inline-block;
- 
- float: right;
- 
-}
-.alllink{
- width: 50%;
- margin: auto;
- margin-top: 65px;
-}
-.link2{
-color: #0366d6;
-text-decoration: none;
-background-color: transparent;
-font-size: 12px; 
-margin: 0px 7px;
-}
-.link2:hover{
-text-decoration: underline;
-}
-.link3{
-/*color:#fe3b3e*/
-color:#fab53f ;
-text-decoration: none;
-background-color: transparent;
-font-size: 12px; 
-margin: 0px 7px;
-}
-.link3:hover{
-text-decoration: underline;
+	display: inline-block;
+	float: left;
 }
 .centrado{
- text-align: center;
- display: inline-block;
- margin-top: -7px;
+	text-align: center;
+	display: inline-block;
+	margin-top: -7px;
+}
+.derecha{
+	display: inline-block;
+	float: right;
+}
+.alllink{
+	width: 50%;
+	margin: auto;
+	margin-top: 100px; /* como se posiciona desde arribe y ademas el width es de 100px pues para la mitad el margin-top  100 px porque el width de la caja es de 100px y el margin se aplica desde el objeto pero como el obejto esta  arriba sin margin respecto al div anterior se queda enn la midas justo .), en concusion seria la caja innvertida como un rotate(180deg).*/
+}
+.link2{
+	color: #0366d6;
+	text-decoration: none;
+	background-color: transparent;
+	font-size: 12px; 
+	margin: 0px 7px;
+}
+.link2:hover{
+	text-decoration: underline;
+}
+.link3{
+	color:#fab53f ;
+	text-decoration: none;
+	background-color: transparent;
+	font-size: 12px; 
+	margin: 0px 7px;
+}
+.link3:hover{
+	text-decoration: underline;
 }
 /* @MEDIA */
 @media only screen and (min-width: 1250px){
@@ -356,111 +409,8 @@ text-decoration: underline;
 	display: inline-block;
 }
 }
-/*@media only screen and (max-width: 996px){
-.kw{
-	display: none;
-}
-}
-*/
 
 
-/*  sasaa  sasa*/
-.maths, .chemistry, .physics{
-
- display: inline; /* quitar efecti de piramide
-  */
-}
-#maths:checked ~ #market .physics, #maths:checked ~ #market .chemistry {
-	display: none;
-}
-
-#physics:checked ~ #market .maths, #physics:checked ~ #market .chemistry {
-	display: none;
-}
-
-#chemistry:checked ~ #market .physics, #chemistry:checked ~ #market .maths {
-	display: none;
-}
-
-input[type="radio"] {
-  position: absolute;
-  opacity: 0;  
- 
-}
-label {
-  position: relative;
-  display: inline-block;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  text-align: center;
-  margin-left: 0%;
-  padding-left: 30px;
-  padding-right: 10px;
-  line-height: 36px;
-  cursor: pointer;
-}
-label::before {
-  content: " ";
-  position: absolute;
-  top: 2px;
-  left: -2px;
-  display: block;
-  width: 24px;
-  height: 24px;
-  border: 2px solid black;
-  
-  z-index: -1;
-}
-input[type="radio"] + label::before {
-  
-  background: white;
-}
-
-
-input[type="radio"]:checked + label {
-  padding-left: 15px;
-  color: white;
-}
-
-input[type="radio"]:checked + label::before {
-  top: -3;
-  width: 100%;
-  height: 100%;
-  background: black;
-}
-label,
-label::before {
-  -webkit-transition: .20s all ;
-  -o-transition: .20s all ;
-  transition: .20s all ;
-}
-.margin{
-	margin-left: 10%
-}
-.margin2{
-	margin-left: 5%;
-
-
-}
-.colorfooter{
-	background: url("bannnerfooter.png") no-repeat center fixed;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	
-	
-    
-    background-size: cover; 
-    
-}
-.registrate{
-	color:#fab53f;
-}
-.faq{
-	margin:100px 0px;
-}
-.and{
-margin-top:100px;	
-}
 
 
 
