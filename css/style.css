@@ -12,9 +12,8 @@ hide:none;
 	background:url("bannera.jpg")no-repeat center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
-	-o-background-size: cover;
-	
-	height:1000px;
+	-o-background-size: cover;	
+	height:100%;
     width:100%;
     background-size: cover;
 }
@@ -22,8 +21,7 @@ hide:none;
 	background: white no-repeat center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
-	-o-background-size: cover;
-	
+	-o-background-size: cover;	
 	height:95px;
     width:100%;
     background-size: cover;
@@ -78,7 +76,7 @@ hide:none;
 .faq{
 	margin-top: 75px;
 }
- div div p:last-child{
+div div p:last-child{
 	margin-bottom: 75px;
 }
 nav div ul li ul li a{
@@ -116,6 +114,10 @@ nav ul {
 .link:hover {
 	background:white;
 	color:black;
+}
+nav div ul a.active{
+	background: white;
+	color: black;
 }
 .max{width: 65%; margin-left: 17.5%; margin-right: 17.5%;}
 /*.marginhome1{
@@ -249,8 +251,8 @@ label,label:before {
   	text-align: center;
 }
 .searchebooks{
- 	margin: 3% 10%; 
- 	font-size: 20px;
+ 	margin: 3% 10%; 			
+ 	font-size: 20px; /* IMPORTANTE ESTE MARGIN DE 10 % PERMITE QUE EN LA SELECION DE NOTES SE VEA ALINEADO CON EL CONTROL + F Y ESO SE DEBE A QUE LOS DOS CONTENEDORTES DE LONK ESTAN CENTRADOS EN EL CENTRO Y ADEMAS TIENEN UN WIDTH DE 40% Y SON 2 PORELO QUE 80 Y COMO ESTA ALIENADO EN EL CENTRO QUEDA 10 % 	TANTO A  IZQUIERDA COMO S LA DERECHA :); */ 
  	font-weight: bolder;
  }
  /* infolinux*/ 
@@ -293,6 +295,85 @@ label,label:before {
 }
 .btnsoftwaredownload:hover{
   	background-color: #4169e1;
+}
+/* OPEN   */ 
+.open{
+	display: inline-block;
+	border: 2px black solid;
+}
+.conteopen{
+	position: absolute;
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+#textopen{
+	text-align: center;
+	margin:8px 0px 8px 0px;
+}
+.open:hover{
+	transform: rotate3d(0,1,0, 180deg);
+}
+/* notes */
+
+#notes{
+	/* margin: auto;
+	width: 100%;  si se quiere modifical el widht del div y mantener el contenido centrado*/
+	
+}
+.linknotes{
+	display: block; /* para el margin y block para que ocupe el full y no se mezcle */
+	color: #ff851b;
+	margin: 18.720px 0px 0px 0%;
+}
+.backnotes{	
+	background: #85144b;
+	text-align: center; /* para alienar los div asl centro, ademas ya que se alinea al centro no hay motivo parea meter un width con margin auto aunque si se deseare se podria hacer, eso si descomentando el widh de los titulos si se quiere hacer algo mas especifico como dar un margin de 2% el L y R y el contenido posea un INLINE para que no haya conflictos no deseado se requer un widht de 96% para este caso */
+}
+.h3notes {
+	display: inline-block; /* para que funcione el margin */
+	/*margin-left: 10%;*/
+	color: white;
+	text-align: left; /* sczd derecha centro o izquierda */
+	margin-top: 15px;
+	/*width: 80%;*para que en redimensionar or similarr no se le pongan al lado moidelo a y b*/
+}
+.h3notesb {
+	display: inline-block; /* para que funcione el margin */
+	/*margin-left: 10%;*/
+	color: white;
+	text-align: left; /* sczd derecha centro o izquierda */
+	margin-top: 15px;
+	 width: 80%; /* ESTE EVITA QUE SE PONGA ALONGSIDE CON EL CONTENIDO Y 80 DEBIDO A QUE 40 Y 40,,,///para que en redimensionar or similar no se le pongan al lado moidelo a y b*/
+}
+.pir{
+	display: inline-block; /* para juntar las 2 columnas */
+	width: 40%; /* 10 80 10 porllo que del 80 sale 40 y 40 ya que son 2 */
+	text-align: left; /*  alineacion del contenido (links,etc ) del modelo a*/
+}
+.linknotesb{
+	display: inline-block; /*para lo contrario d elo anterio para que se amontonen*/
+	color: #ff851b;
+	width: 40%; /* con esto le admos un width por lo  que va aocupar si o si  lo que crea una separacion emtre ella simulando una separacion cuando se tarta del mismo bloque y 40 para que se aperfecto*/
+	margin: 18.720px 0px 0px 0%; /* SI PONES EL LAST CHILD POR ENCIMA SE CANCELA DEBIDO A QUE ESTAS DICIENDO QUE QUIERS 0px con boy esto se debe a va en orden ej la primera es 0 y las segunda es 2 se queda con 1 se sobreescribe, aunque es obvio en contenido esporadico se suele parar por alto a la primera*/
+}
+.linknotes:hover{
+	color: white;
+}
+.linknotesb:hover{
+	color: white;
+}
+.pirb{
+	display: inline; /* auqneu ya esta por defecto para 2 columnas */
+	width: 39%;
+	text-align: left; /* alineacion del contenido (links,etc ) del modelo b*/ 
+
+}
+.lastchild{
+	margin-bottom:50px;
 }
 /* FOOTER */
 .bold{
@@ -409,11 +490,12 @@ footer{
 	display: inline-block;
 }
 }
-
-
-
-
-
-
-
-
+/* 
+ __          # ________      # ________     # ___   __      # ______    # __  __    #
+/_/\         #/_______/\     #/_______/\    #/__/\ /__/\    #/_____/\   #/_/\/_/\   #
+\:\ \        #\::: _  \ \    #\__.::._\/    #\::\_\\  \ \   #\::::_\/_  #\ \ \ \ \  #
+ \:\ \       # \::(_)  \ \   #   \::\ \     # \:. `-\  \ \  # \:\/___/\ # \:\_\ \ \ #
+  \:\ \____  #  \:: __  \ \  #   _\::\ \__  #  \:. _    \ \ #  \:::._\/ #  \::::_\/ #
+   \:\/___/\ #   \:.\ \  \ \ #  /__\::\__/\ #   \. \`-\  \ \#   \:\ \   #    \::\ \ #
+    \_____\/ #    \__\/\__\/ #  \________\/ #    \__\/ \__\/#    \_\/   #     \__\/ #
+*/
