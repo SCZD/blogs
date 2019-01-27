@@ -88,7 +88,7 @@ nav div ul li{
 	display:inline-block;  
 }
 nav ul {
-  	text-align: right;  /* cualquiera no hace falta copncretar ya que lo queremos para todos*/
+  	text-align: right;  /*para cualqueir nav ul,no hace falta concretar ya que lo queremos para todos*/
 }
 .sub-menu{
 	position: absolute;
@@ -120,11 +120,6 @@ nav div ul a.active{
 	color: black;
 }
 .max{width: 65%; margin-left: 17.5%; margin-right: 17.5%;}
-/*.marginhome1{
-	text-align: center;
-	margin: 0 10%;
-	color: black;
-}*/
 .titulobanner{
 	color:white;
 	text-align: center;
@@ -245,14 +240,17 @@ label,label:before {
   	display: inline-block;
 	width:225px;
   	height:400px;
-	vertical-align: top; /* igual de margen tanto arriba y abjo aunque tengan mas texto (pues que el nombre del libro ocupe 2 o mas lineas)*/
+	vertical-align: top; /* esto alinea los contenidos para que tenga
+							el mismo margen arriba y abjo aunque tengan mas texto (ocupe 2 o mas lineas)*/
 }
 .booksnamecenter{
   	text-align: center;
 }
 .searchebooks{
  	margin: 3% 10%; 			
- 	font-size: 20px; /* IMPORTANTE ESTE MARGIN DE 10 % PERMITE QUE EN LA SELECION DE NOTES SE VEA ALINEADO CON EL CONTROL + F Y ESO SE DEBE A QUE LOS DOS CONTENEDORTES DE LONK ESTAN CENTRADOS EN EL CENTRO Y ADEMAS TIENEN UN WIDTH DE 40% Y SON 2 PORELO QUE 80 Y COMO ESTA ALIENADO EN EL CENTRO QUEDA 10 % 	TANTO A  IZQUIERDA COMO S LA DERECHA :); */ 
+ 	font-size: 20px; /* IMPORTANTE ESTE MARGIN DE 10 % PERMITE QUE EN LA SELECION DE NOTES SE VEA ALINEADO EL TEXTO "CON EL CONTROL + F" Y ESO SE DEBE A QUE LOS DOS 
+ 						CONTENEDORTES DE LINK ESTAN CENTRADOS EN EL CENTRO Y ADEMAS TIENEN UN WIDTH DE 40% Y COMO SON 2 TIENEN EN TOTAL UN 80% Y COMO ESTA ALIENADO EN EL CENTRO QUEDA 10 % 	
+ 						TANTO A  IZQUIERDA COMO A LA DERECHA :)*/ 
  	font-weight: bolder;
  }
  /* infolinux*/ 
@@ -321,44 +319,48 @@ label,label:before {
 
 #notes{
 	/* margin: auto;
-	width: 100%;  si se quiere modifical el widht del div y mantener el contenido centrado*/
+	width: 100%;  si se quiere modifical el widTH del div y mantener el contenido centrado*/
 	
 }
 .linknotes{
-	display: block; /* para el margin y block para que ocupe el full y no se mezcle */
+	display: block; /* para el margin ,y block para que ocupe el full y no se mezcle */
 	color: #ff851b;
 	margin: 18.720px 0px 0px 0%;
 }
 .backnotes{	
 	background: #85144b;
-	text-align: center; /* para alienar los div asl centro, ademas ya que se alinea al centro no hay motivo parea meter un width con margin auto aunque si se deseare se podria hacer, eso si descomentando el widh de los titulos si se quiere hacer algo mas especifico como dar un margin de 2% el L y R y el contenido posea un INLINE para que no haya conflictos no deseado se requer un widht de 96% para este caso */
+	text-align: center; /* para alienar los div al centro, ademas ya que se alinea al centro no hay motivo parea meter 
+						un width X% con margin auto aunque si se desease se podria hacer, eso si descomentando el width  de los titulos, si 
+						se quiere hacer algo mas especifico como dar un margin de 2% en L y R y el contenido posea un INLINE pues para que no haya 
+						conflictos no deseado se requiere un width de 96% para ese caso */
 }
 .h3notes {
 	display: inline-block; /* para que funcione el margin */
-	/*margin-left: 10%;*/
+	/*margin-left: 10%; en este caso no es cencesario ya que estan dentro de un div con esas caracteristicas*/
 	color: white;
-	text-align: left; /* sczd derecha centro o izquierda */
+	text-align: left; /* sczd derecha,centro o izquierda */
 	margin-top: 15px;
-	/*width: 80%;*para que en redimensionar or similarr no se le pongan al lado moidelo a y b*/
+	/*width: 80%; para que en redimensionar or similar no se le pongan allado tanto al modelo a y b*/
 }
 .h3notesb {
 	display: inline-block; /* para que funcione el margin */
-	/*margin-left: 10%;*/
+	/*margin-left: 10%; en este caso no es cencesario ya que estan dentro de un div con esas caracteristicas*/
 	color: white;
-	text-align: left; /* sczd derecha centro o izquierda */
+	text-align: left; /* sczd derecha,centro o izquierda */
 	margin-top: 15px;
-	 width: 80%; /* ESTE EVITA QUE SE PONGA ALONGSIDE CON EL CONTENIDO Y 80 DEBIDO A QUE 40 Y 40,,,///para que en redimensionar or similar no se le pongan al lado moidelo a y b*/
+	width: 80%; /* ESTE EVITA QUE SE PONGA ALONGSIDE CON EL CONTENIDO Y 80 DEBIDO A QUE SON 40 Y 40, para que en redimensionar or similar no se le pongan al lado tanto al modelo a y b*/
 }
 .pir{
 	display: inline-block; /* para juntar las 2 columnas */
-	width: 40%; /* 10 80 10 porllo que del 80 sale 40 y 40 ya que son 2 */
+	width: 40%; /* 10 80 10 por lo que del 80 sale 40 y 40 ya que son 2 */
 	text-align: left; /*  alineacion del contenido (links,etc ) del modelo a*/
 }
 .linknotesb{
-	display: inline-block; /*para lo contrario d elo anterio para que se amontonen*/
+	display: inline-block; /*para lo contrario de lo anterio, es decir, para que se amontonen*/
 	color: #ff851b;
-	width: 40%; /* con esto le admos un width por lo  que va aocupar si o si  lo que crea una separacion emtre ella simulando una separacion cuando se tarta del mismo bloque y 40 para que se aperfecto*/
-	margin: 18.720px 0px 0px 0%; /* SI PONES EL LAST CHILD POR ENCIMA SE CANCELA DEBIDO A QUE ESTAS DICIENDO QUE QUIERS 0px con boy esto se debe a va en orden ej la primera es 0 y las segunda es 2 se queda con 1 se sobreescribe, aunque es obvio en contenido esporadico se suele parar por alto a la primera*/
+	width: 40%; /* con esto le damos un width por lo  que va a ocupar si o si por lo que crea una separacion entre ellos "simulando una separacion", se trata del mismo bloque y 40 para que sea perfecto*/
+	margin: 18.720px 0px 0px 0%; /* SI PONES EL LAST CHILD POR ENCIMA SE CANCELA DEBIDO A QUE ESTAS DICIENDO QUE QUIERES 0px aunque se haya dado la la conf de x px esto se debe a que va en orden ej la primera es 0 y 
+									la segunda es 1 se queda con 1 porque se sobreescribe, aunque es obvio en contenido "esporadico" se suele parar por alto a la primera*/
 }
 .linknotes:hover{
 	color: white;
@@ -367,7 +369,7 @@ label,label:before {
 	color: white;
 }
 .pirb{
-	display: inline; /* auqneu ya esta por defecto para 2 columnas */
+	display: inline; /* aunque ya esta por defecto para las 2 "columnas" */
 	width: 39%;
 	text-align: left; /* alineacion del contenido (links,etc ) del modelo b*/ 
 
@@ -444,7 +446,7 @@ footer{
 }
 .textoabout{
 	text-align: center;
-	margin-bottom:0px;/*IMPORTANTE EN LAST CHILD SE LE DIO 75 PX DE MARGEN DE BOTTOM, y por defento tiene 8 pixeles pero se puede quitar np*/
+	margin-bottom:0px;/*IMPORTANTE EN LAST CHILD SE LE DIO 75 PX DE MARGEN DE BOTTOM,*/
 }
 .izquierda{
 	display: inline-block;
@@ -462,7 +464,9 @@ footer{
 .alllink{
 	width: 50%;
 	margin: auto;
-	margin-top: 100px; /* como se posiciona desde arribe y ademas el width es de 100px pues para la mitad el margin-top  100 px porque el width de la caja es de 100px y el margin se aplica desde el objeto pero como el obejto esta  arriba sin margin respecto al div anterior se queda enn la midas justo .), en concusion seria la caja innvertida como un rotate(180deg).*/
+	margin-top: 100px; 	/* si se posiciona desde arriba y ademas teniendo un height  de 100px
+						 pues para la mitad el margin-top seria 100 px debido a que el  height de la caja es de 100px y el margin se aplica desde el 
+						 objeto y sin margin respecto al div anterior se queda en la midad justo , en concusion seria la caja innvertida como un rotate(180deg).*/
 }
 .link2{
 	color: #0366d6;
