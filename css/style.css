@@ -66,6 +66,7 @@ hide:none;
 }
 .par1{
     font-size: 35px;
+    transform: rotate3d(0,0,1,90deg);  
 }
 .par2{
     font-size: 17px;
@@ -297,7 +298,11 @@ label,label:before {
 /* OPEN   */ 
 .open{
 	display: inline-block;
-	border: 2px black solid;
+	border: 2px #eeeeee solid;
+}
+.idk{
+	margin-left: 25px;
+	margin-right:25px;
 }
 .conteopen{
 	position: absolute;
@@ -307,13 +312,22 @@ label,label:before {
 	top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); 
+    -webkit-transition: all .3s ease 0s;
+	-moz-transition: all .3s ease 0s;
+	-o-transition: all .3s ease 0s;
+	transition: all .3s ease 0s;
 }
 #textopen{
 	text-align: center;
 	margin:8px 0px 8px 0px;
 }
 .open:hover{
-	transform: rotate3d(0,1,0, 180deg);
+	transform: rotate3d(0,0,0, 0deg);
+	border:2px solid transparent;
+ 	box-shadow:0px 0px 50px #e6dbff /*#cccccc*/;
+	-moz-transition:all  .1s ease;
+	-o-transition:all .1s ease;
+	transition:all  .1s ease;
 }
 /* notes */
 
@@ -412,33 +426,63 @@ footer{
 /* ABOUT */
 .who{
 	display: inline-block;
-	margin: 70px 15px 50px 30px;
+	margin: 60px 10px;
 }
-.whotextoa{
-	display: none;
-	margin-top: 85px;
-	vertical-align:top;
-	height: 130px;
-	width: 250px;
-	color:white;
-}
-.whotextob{
-	display: none;
-	vertical-align:top;
+ .whotextoa{
 	color: white;
-	margin-top: 90px;
-	height: 130px;
-	width: 300px;
-	margin-right: 35px;
+	vertical-align: middle;
+	display: none;
+	height: 50%;
+	margin-left:  -10px;
+	margin-right: 25px;
 }
+/*
+.whotextob{
+	color: white;
+	vertical-align: middle;
+	line-height: 50%;
+	display: none;
+}
+*/
 .whocircle{
   border-radius:150px;
   border: solid transparent 6px;
 }
-.whocircle:hover{
+.W:hover{
+	border:solid 6px #27ebc5;
+	-webkit-transition: .3s;
+}
+.A:hover{
+	border:solid 6px #FF8C00;
+	-webkit-transition: .3s;
+}
+.S:hover{
 	border:solid 6px white;
 	-webkit-transition: .3s;
 }
+.D:hover{
+	border:solid 6px white;
+	-webkit-transition: .3s;
+}
+
+.WT:hover{
+	 color: #27ebc5;
+	-webkit-transition: .1s;
+}
+.AT:hover{
+	color:  #FF8C00;
+	-webkit-transition: .1s;
+}
+/*
+.ST:hover{
+	color: #8667f7;
+	-webkit-transition: .1s;
+}
+.DT:hover{
+	color:#ccff00;
+	-webkit-transition: .1s;
+}
+*/
 .about{
 	margin:-45px 30px;
 	color:white;
