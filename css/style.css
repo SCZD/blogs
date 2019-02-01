@@ -423,6 +423,136 @@ footer{
 	-moz-background-size: cover;
 	-o-background-size: cover;
 }
+/* Members */
+.centrado{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+.members{
+	width: 80%;
+	margin:auto;
+	text-align: center;
+	margin-top: 50px; 
+}
+.card{
+	position: relative;
+	display: inline-block;
+	width: 500px;
+	height: 309px;
+	border-radius: 10px; 
+	overflow: hidden;
+	margin: 1rem;
+}
+.magic{
+	position: absolute;
+	width: 175px;
+	height: 100%;
+	z-index: 2;
+	transition: width 0.25s;
+	background: #ffb3ba;
+	overflow: hidden;
+	
+}
+.invisible{
+	position: absolute;
+	width: 325px;
+	height: 100%;
+	float: 	left;
+	left: 175px;
+	background: ;/*si pones background desaparece el after, se sobreescribe */
+	color: #ffffff;
+}
+.card:hover .magic{
+	width: 100%;
+	border-radius: 0px 10px 10px 0px; 
+}
+.card:hover .estable{
+	transition: 0.5s;
+	transform: rotate3d(0,1,0,360deg);
+}
+.card:hover{
+	box-shadow: 1px 1px  100px #bae1ff;
+}
+.card:hover .estable::after {
+	-webkit-animation: hudini .5s 1;
+   -moz-animation: hudini .5s 1 ;
+   -o-animation: hudini .5s 1;
+   animation: hudini .5s 1;
+}
+.estable{
+	position: relative;
+	width: 175px;
+	height: 100%;
+	float: left;
+}
+.estable::after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 10%;
+	right: -2px;
+	height: 80%;
+	border-left: 2px solid #ffdfba; /*!! cuadno se acaba la animcaion carga lo siguente es decir esto en cuanto al a las propiedades del border , 
+									si se quita el keyframe y lo del giro se quedaria lo que hace de vuelta de ida tambien*/
+}
+.nomagic{
+	position: relative;
+	width: 325px;
+	height: 100%;
+	float: right;
+	z-index: 1;
+}
+.user{
+	position: relative;
+	top: 25%;
+}
+#deletep{
+	position: relative;
+   	text-align: left;
+    margin-bottom: 0px;
+    width:80%;
+    padding: 0rem 0rem 0rem 2em;
+    display:block;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+#deleteh1{
+	
+}
+.colorh1invi{
+
+}
+.colorh1visi{
+	
+}
+.imgprofile{
+	border-radius: 150px;
+	top:50%;
+}
+.left{
+	position: absolute;
+	bottom:2rem;
+	width: 162.5px;
+}
+.right{
+	position: absolute;
+	bottom: 2rem;
+	right:  0px;
+	width: 162.5px;
+}
+.imgcard{
+	border: 2px solid transparent;
+	border-radius: 8px;
+	transition: .4s;
+}
+.imgcardblock:hover .in{
+	transform: rotate3d(0,0,1,360deg);
+}
 /* ABOUT */
 .who{
 	display: inline-block;
@@ -496,7 +626,7 @@ footer{
 	display: inline-block;
 	float: left;
 }
-.centrado{
+.centrado2{
 	text-align: center;
 	display: inline-block;
 	margin-top: -7px;
@@ -538,6 +668,13 @@ footer{
 	display: inline-block;
 }
 }
+@keyframes hudini {   
+      0%,69%{
+      	border-left: 2px solid #ffb3ba;
+      }
+      70%{
+      	border-left: 2px solid #ffdfba;
+      }
 /* 
  __          # ________      # ________     # ___   __      # ______    # __  __    #
 /_/\         #/_______/\     #/_______/\    #/__/\ /__/\    #/_____/\   #/_/\/_/\   #
