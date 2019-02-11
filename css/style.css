@@ -578,12 +578,19 @@ footer{
   border-radius:150px;
   border: solid transparent 6px;
 }
+.linkimgfooter{
+	text-decoration: none;
+}
+						/*----------------------------------*/
 .mua{
 	position: relative;
 	display: inline-block;
 	width:150px;
 	height:150px;
+	margin-top: 25px;
 	border-radius: 50%;
+	margin-left:15px ;
+	margin-right: 15px; 
 	background-image: linear-gradient( #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
 	animation: spin 1s linear infinite;
 }
@@ -599,11 +606,9 @@ footer{
 .mua span:nth-child(1) {
   filter: blur(5px);
 }
-
 .mua span:nth-child(2) {
   filter: blur(25px);
 }
-
 .mua span:nth-child(3) {
   filter: blur(50px);
 }
@@ -619,6 +624,138 @@ footer{
   border-radius: 50%;
   animation: ulala 1s linear infinite;
 }
+						/*----------------------------------*/
+.muab{
+	position: relative;
+	display: inline-block;
+	width:150px;
+	height:150px;
+	margin-top: 25px;
+	border-radius: 50%;
+	margin-left:15px ;
+	margin-right: 15px; 
+	background:white;
+	animation: spin 1s linear infinite;
+}
+.muab span {
+	text-align: normal;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left:0%;
+	border-radius: 50%;
+	background:white;
+}
+.muab span:nth-child(1) {
+  filter: blur(5px);
+}
+.muab span:nth-child(2) {
+  filter: blur(25px);
+}
+.muab span:nth-child(3) {
+  filter: blur(50px);
+}
+.muab:after {
+  content: '';
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  right: 12px;
+  bottom: 12px;
+  background: url("https://avatars0.githubusercontent.com/u/34187693?s=400&v=4") no-repeat center;
+  background-size: cover; 
+  border-radius: 50%;
+  animation: ulala 1s linear infinite;
+}
+						/*----------------------------------*/
+.muac{
+	position: relative;
+	display: inline-block;
+	width:150px;
+	height:150px;
+	margin-top: 25px;
+	border-radius: 50%;
+	margin-left:15px ;
+	margin-right: 15px; 
+	background:transparent;
+	animation: spin 1s linear infinite;
+}
+.muac span {
+	text-align: normal;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left:0%;
+	border-radius: 50%;
+	background:;
+}
+.muac span:nth-child(1) {
+  filter: blur(5px);
+}
+.muac span:nth-child(2) {
+  filter: blur(25px);
+}
+.muac span:nth-child(3) {
+  filter: blur(50px);
+}
+.muac:after {
+  content: '';
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  right: 12px;
+  bottom: 12px;
+  background: url("gonza.png") no-repeat center;
+  background-size: cover; 
+  border-radius: 50%;
+  animation: ulala 1s linear infinite;
+}
+						/*----------------------------------*/
+.muad{
+	position: relative;
+	display: inline-block;
+	width:150px;
+	height:150px;
+	margin-top: 25px;
+	border-radius: 50%;
+	margin-left:15px ;
+	margin-right: 15px; 
+	background:black;
+	animation: spin 1s linear infinite;
+}
+.muad span {
+	text-align: normal;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left:0%;
+	border-radius: 50%;
+	background: black;
+}
+.muad span:nth-child(1) {
+  filter: blur(5px);
+}
+.muad span:nth-child(2) {
+  filter: blur(25px);
+}
+.muad span:nth-child(3) {
+  filter: blur(50px);
+}
+.muad:after {
+  content: '';
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  right: 12px;
+  bottom: 12px;
+  background: url("denelcito.png") no-repeat center;
+  background-size: cover; 
+  border-radius: 50%;
+  animation: ulala 1s linear infinite;
+}
+						/*----------------------------------*/
+/*
+		Para texto alongside de los div
 .W:hover{
 	border:solid 6px #27ebc5;
 	-webkit-transition: .3s;
@@ -644,7 +781,6 @@ footer{
 	color:  #FF8C00;
 	-webkit-transition: .1s;
 }
-/*
 .ST:hover{
 	color: #8667f7;
 	-webkit-transition: .1s;
@@ -655,9 +791,12 @@ footer{
 }
 */
 .about{
-	margin:-45px 30px;
+	margin:-35px 30px;
 	color:white;
 	text-align: center;
+}
+.about h1{
+	margin-top: 75px;
 }
 .textoabout{
 	text-align: center;
@@ -704,11 +843,12 @@ footer{
 	text-decoration: underline;
 }
 /* @MEDIA */
-@media only screen and (min-width: 1250px){
+/*@media only screen and (min-width: 1250px){
 .whotextoa, .whotextob{
 	display: inline-block;
 }
 }
+*/
 @keyframes hudini {   
       0%,69%{
       	border-left: 2px solid #ffb3ba;
