@@ -1,6 +1,10 @@
 :root{
 hide:none;
 }
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+*{
+	font-family: 'Open Sans', sans-serif;
+}
 /* index/kw */
 .bodyc{
 	background:white no-repeat center fixed;
